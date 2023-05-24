@@ -28,6 +28,9 @@ public class Guia4 {
                     + " 4 ---- Juegemos con Abstraccion!!    \n"
                     + " S ---- Salir \n");
             vResp = JOptionPane.showInputDialog("Que Opcion Elijes, S Sale");
+            if (vResp == null){
+                vResp = "S";
+            }
             switch (vResp) {
                 case "1":
                     Animal perro = new Perro("Stich","Carnivoro",15,"Doberman");
